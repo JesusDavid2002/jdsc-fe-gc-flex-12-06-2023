@@ -1,0 +1,193 @@
+.container{
+    background-color: rgb(251, 251, 252);
+    font-family: arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: -8px;
+}
+
+a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* CSS del Header */
+.header{ 
+    height: 5vh;
+    font-size: 13px;
+    padding-top: 20px;
+    display: flex;
+    padding-left: 25px;
+}
+
+.headerleft{
+    width: 55vw;
+}
+
+.headerright{
+    width: 42vw;
+    display: flex; 
+    text-align: right;
+}
+
+.headerrightleft{
+    width: 45vw;
+    text-align: right;
+}
+
+.headerrightmid{
+    width: 3vw;
+    text-align: right; 
+    margin-top: -2px;
+}
+
+.headerrightright{
+    width: 3vw;
+    text-align: right;
+    margin-top: -5px;
+}
+
+#perfilGoogle{
+    border-radius: 50%;
+}
+
+/* CSS de Main */
+
+.main{
+    height: 75vh;
+    text-align: center;
+    margin-top: 50px;
+}
+.mainmid{
+    width: 30vw;
+    height: 5vh;
+    align-items: center;
+    border: 1px solid rgb(204, 202, 202);
+    display: flex;
+    margin-left: 650px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.mainmidleft{
+    width: 30vw;
+}
+
+.mainmidright{
+    width: 70vw;
+}
+.mainexplorer{
+    width: 400vw;
+    border: none;
+}
+
+#micro{
+    width: 20px;
+    height: 20px;
+}
+
+.mainmidbuttons{
+    display: flex;  
+}
+
+.buttonleft{
+    width: 50vw;
+    padding: 20px;
+    margin-right: -10px;
+    border-radius: 4px;
+    text-align: right;
+    
+}
+
+.buttonright{
+    width: 50vw;
+    padding: 20px;
+    margin-left: -10px;
+    border-radius: 4px;
+    text-align: left;  
+}
+
+.mainbutton{
+    background-color: rgb(243, 243, 243);
+    height: 40px;
+    width: 160px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.mainbutton:hover{
+    border: 1px solid rgb(95, 95, 235);
+}
+
+.mainbottom{
+    font-size: 12px;
+    display: flex;
+}
+
+.mainbottomtext{
+    width: 48vw;
+    text-align: right;
+}
+
+.mainbottomurl{
+    width: 50vw;
+    padding: 12px;
+    text-align: left;
+}
+
+.amain{
+    color: blue;
+}
+
+.amain:hover{
+    text-decoration: underline;
+}
+
+/* CSS del Footer */
+
+.footer{
+    padding: 10px;
+    height: 10vh;
+    background-color: rgb(243, 240, 240);
+}
+
+.afoot{ 
+    font-size: 15px;
+    color: rgb(104, 103, 103);
+}
+
+.footertop{
+    padding-left: 14px;
+    color: rgb(104, 103, 103);
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.footerbottom{
+    padding-top: 10px;
+    color: rgb(104, 103, 103);
+    display: flex;
+}
+
+.footerbottomleft{
+    width: 30vw;
+}
+
+.footerbottommid{
+    width: 40vw;
+    text-align: center;
+}
+
+.img{
+    width: 10px;
+    margin-right: -10px;
+}
+
+.footerbottomright{
+    width: 30vw;
+    text-align: right;
+}
+
