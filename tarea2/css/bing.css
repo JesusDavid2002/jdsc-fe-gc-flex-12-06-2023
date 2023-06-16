@@ -7,7 +7,7 @@
     background-size: 100% 100%;
 }
 
-.material-symbols-outlined{
+#menu{
     color: white;
     margin-top: 10px;
     margin-left: 50px;
@@ -58,3 +58,109 @@ h2{
     width: 32px;
     padding-top: 2px;
 }
+
+/* Main del bing */
+#main{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+.barrabuscador{
+    width: 800px;
+    height: 70px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    text-align: right;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 0px black;
+}
+
+#buscador{
+    margin-top: 10px;
+    max-width: 600px;
+    max-height: 44px;
+    min-width: 600px;
+    min-height: 44px;
+    border: 1px solid white;
+}
+
+#camara{
+    transform: rotate(45deg);
+    font-size: 40px;
+    color: rgb(48, 102, 146);
+    margin-top: 12px;
+}
+
+#icono{
+    font-size: 40px;
+    color: rgb(48, 102, 146);
+}
+/* ---------------------------- */
+#iconocarusel{
+    display: flex;
+    width: 100vw;
+    height: 5vh;
+}
+/* izquierda */
+.iconocaruselleft{
+    width: 50vw;
+}
+#flecha{
+    padding: 5px;
+}
+
+.flecha{
+    width: 40px;
+    height: 40px;
+    transform: rotate(-90deg);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+/* derecha */
+.iconocaruselright{
+    width: 50vw;
+    display: flex;
+    justify-content: right;
+}
+
+.info{
+    border:1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.flechainfo{ 
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 10px;
+    margin-left: -5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: rgb(184, 183, 183);
+    text-align: center;
+}
+/* ---------------------------- */
+#carusel, .img {
+    display: block;
+    position: relative;		
+    width: 300px;
+  }
+  
+#carusel p {
+    background-color: rgba(255,255,255,.8);
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    padding: 5px;
+    width: 100%;
+  }
