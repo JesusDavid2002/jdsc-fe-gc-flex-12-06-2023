@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microsoft Bing</title>
     <link rel="stylesheet" href="./css/bing.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0" />
+    <link rel="shortcut icon" href="https://www.bing.com/favicon.ico" />
 </head>
 <body>
     <div id="container">
@@ -15,18 +16,20 @@
                 <h2>Microsoft Bing</h2>
             </div>
             <div class="headermid">
-                <a href="">Imágenes</a>
-                <a href="">Vídeos</a>
-                <span id="menu" class="material-symbols-outlined">more_horiz</span>
+                <a class="amenu" href="">Imágenes</a>
+                <a class="amenu" href="">Vídeos</a>
+                <span id="menuicon" class="material-symbols-outlined">more_horiz</span>
             </div>
             <div class="headerright">
-                <a href="">català</a>
-                <a href="">English</a>
-                <a href="">Iniciar sesión</a>
+                <a class="amenu" href="">català</a>
+                <a class="amenu" href="">English</a>
+                <a class="amenu" href="">Iniciar sesión</a>
                 <img src="./img/profilePicBackground.svg" alt="" class="fotoperfil">
-                <a href="">Rewards</a>
-                <!-- Aqui iria icono de medalla -->
-                <span id="menu" class="material-symbols-outlined">menu</span>
+                <a class="amenu" href="">Rewards</a>
+                <div>
+                <span id="menuicon3"class="material-symbols-outlined">workspace_premium</span>
+                </div>
+                <span id="menuicon2" class="material-symbols-outlined">menu</span>
             </div>
         </div>
         <div id="main">
@@ -45,20 +48,64 @@
                 </div>
             </div>
             <div class="iconocaruselright">
-                <div class="info">Info</div>
-                <div class="flechainfo">
-                    <span class="material-symbols-outlined">arrow_back_ios_new</span>
+                <div class="info">
+                    <img src="./img/ubicacion.png" alt="">
+                    <a href="" class="ainfo">Info</a>
                 </div>
                 <div class="flechainfo">
-                    <span class="material-symbols-outlined">arrow_forward_ios</span>
+                    <span id="flecha" class="material-symbols-outlined">arrow_back_ios_new</span>
+                </div>
+                <div class="flechainfo">
+                    <span id="flecha" class="material-symbols-outlined">arrow_forward_ios</span>
                 </div>
             </div>
         </div>
         <div id="carusel">
-            <img src="./img/noticia1.jpg" alt="" class="img">
-            <p>Cuarto Milenio</p>
+            <div class="imagencarusel">
+                <p>eldiario.es</p>
+                <h3>Cuarto Milenio</h3>
+                <img src="./img/noticia1.jpg" alt="" class="img">
+            </div> 
+            <div class="imagencarusel">
+                <p>eldiario.es</p>
+                <h3>Cuarto Milenio</h3>
+                <img src="./img/noticia1.jpg" alt="" class="img">
+            </div>
+            <div class="imagencarusel">
+                <p>eldiario.es</p>
+                <h3>Cuarto Milenio</h3>
+                <img src="./img/noticia1.jpg" alt="" class="img">
+            </div>
+            <div class="imagencarusel">
+                <p>eldiario.es</p>
+                <h3>Cuarto Milenio</h3>
+                <img src="./img/noticia1.jpg" alt="" class="img">
+            </div>
+            <div class="imagencarusel">
+                <p>eldiario.es</p>
+                <h3>Cuarto Milenio</h3>
+                <img src="./img/noticia1.jpg" alt="" class="img">
+            </div>
+            <div class="imagencarusel">
+                <p>eldiario.es</p>
+                <h3>Cuarto Milenio</h3>
+                <img src="./img/noticia1.jpg" alt="" class="img">
+            </div>
         </div>
-        <div id="footer"></div>
+        <div id="footer">
+            <div class="footerleft">
+                <a class="afooter" href="">Privacidad y cookies</a>
+                <a class="afooter" href="">Información legal</a>
+                <a class="afooter" href="">Anunciar</a>
+                <a class="afooter" href="">Acerca de nuestros anucios</a>
+                <a class="afooter" href="">Ayuda</a>
+                <a class="afooter" href="">Comentarios</a>
+                <a class="afooter" href="">Protección de datos europea</a>
+            </div>
+            <div class="footerright">
+                <a class="afooter" href="">&copy; 2021 Microsoft</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

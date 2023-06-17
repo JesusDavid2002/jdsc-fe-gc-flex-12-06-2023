@@ -7,23 +7,41 @@
     background-size: 100% 100%;
 }
 
-#menu{
-    color: white;
-    margin-top: 10px;
-    margin-left: 50px;
-    vertical-align: bottom;
-}
-
 a{
     text-decoration: none;
     color: white;
     font-family: sans-serif;
-    padding-left: 50px;
 }
 
-/* Header de bing */
+/* Parte superior de bing header */
 #header{
     display: flex;
+}
+
+.amenu{
+    padding-left: 50px;
+    margin-top: 5px;
+}
+
+#menuicon ,#menuicon2, #menuicon3{
+    color: white;
+    margin-left: 50px;
+    vertical-align: bottom;
+    font-size: xx-large;
+    cursor: pointer;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#menuicon3{
+    border: 2px solid rgba(255, 255, 255, 0.397);
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: -5px;
+    transform: rotate(180deg);
 }
 
 /* Parte izquierda del header */
@@ -45,23 +63,26 @@ h2{
 /* Parte central del header  */
 .headermid{
     width: 40vw;
+    margin-top: 15px;
 }
 
 /* Parte derecha del header  */
 .headerright{
     width: 36vw;
+    display: flex;
+    margin-top: 15px;
 }
 
 .fotoperfil{
-    margin-left: 8px;
-    height: 32px;
     width: 32px;
-    padding-top: 2px;
+    height: 32px;
+    margin-left: 8px;
+    cursor: pointer;
 }
 
 /* Main del bing */
 #main{
-    height: 50vh;
+    height: 60vh;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 3fr;
@@ -89,18 +110,19 @@ h2{
     border: 1px solid white;
 }
 
-#camara{
-    transform: rotate(45deg);
+#camara, #icono{
     font-size: 40px;
     color: rgb(48, 102, 146);
-    margin-top: 12px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-#icono{
-    font-size: 40px;
-    color: rgb(48, 102, 146);
+#camara{
+    transform: rotate(45deg);
 }
+
 /* ---------------------------- */
+/* Iconos del carusel */
 #iconocarusel{
     display: flex;
     width: 100vw;
@@ -109,58 +131,129 @@ h2{
 /* izquierda */
 .iconocaruselleft{
     width: 50vw;
+    margin-left: 50px;
 }
 #flecha{
-    padding: 5px;
+    margin-top: 7.5px;
 }
 
 .flecha{
     width: 40px;
     height: 40px;
     transform: rotate(-90deg);
-    border: 1px solid black;
-    border-radius: 10px;
     margin: 5px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgba(34,34,34,.9);
+    border-radius: 10px;
+    color: gray;
+    cursor: pointer;
+    position: relative;
 }
 
 /* derecha */
 .iconocaruselright{
     width: 50vw;
+    margin-right: 50px;
     display: flex;
     justify-content: right;
 }
 
 .info{
-    border:1px solid black;
+    width: 80px;
+    height: 40px;
+    margin: 8px;
+    padding-left: 10px;
+    border: 1px solid black;
     border-radius: 10px;
-    margin: 10px;
+    align-items: center;
+    display: flex;
+    color: white;
+    background-color: rgba(34,34,34,.9);
+}
+
+.ainfo{
+    padding-left: 10px;
 }
 
 .flechainfo{ 
-    width: 30px;
-    height: 30px;
-    padding: 5px;
+    width: 40px;
+    height: 40px;
     margin: 10px;
     margin-left: -5px;
+    margin-top: 7.5px;
     border: 1px solid black;
     border-radius: 10px;
-    color: aliceblue;
-    background-color: rgb(184, 183, 183);
+    color: gray;
+    background-color: rgba(34,34,34,.9);
+    cursor: pointer;
+    position: relative;
     text-align: center;
 }
+
+#flecha:hover{
+    color: white;
+}
 /* ---------------------------- */
-#carusel, .img {
+/* Carusel de imagenes */
+#carusel{
+    display: flex;
+    margin-left: 50px;
+}
+
+.imagencarusel, .img {
+    width: 300px;
+    margin: 10px;
+    margin-left: 0;
     display: block;
     position: relative;		
-    width: 300px;
-  }
-  
-#carusel p {
-    background-color: rgba(255,255,255,.8);
-    display: block;
+    z-index: 0;
+}
+
+.imagencarusel p {
+    width: 95%;
+    height: 80%;
+    padding-top: 15px;
+    padding-left: 15px;
     position: absolute;
-    bottom: -16px;
-    left: 0;
-    padding: 5px;
+    color: white;
+    background: linear-gradient(transparent 0%, rgb(36, 36, 36) 100%);
+    z-index: 1;
+}
+
+.imagencarusel h3{
     width: 100%;
-  }
+    height: 90%;
+    margin-top: 60px;
+    padding-left: 15px;
+    position: absolute;
+    color: white;
+    z-index: 1;
+}
+
+/* ---------------------------- */
+/* Parte inferior de Bing footer */
+#footer{
+    width: 100vw;
+    height: 8.6vh;
+    margin-top: -17px;
+    display: flex;
+    background-color: rgb(58, 58, 58);
+    align-items: center;
+}
+
+.footerleft{
+    width: 80vw;
+    margin-left: 50px;
+}
+
+.footerright{
+    width: 20vw;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.afooter{
+    padding: 20px;
+    color: grey;
+}
